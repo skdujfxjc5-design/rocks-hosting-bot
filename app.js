@@ -1,0 +1,2 @@
+document.querySelectorAll('.file-drop input[type="file"]').forEach((input)=>input.addEventListener('change',()=>{const out=input.closest('.file-drop').querySelector('.file-name');out.textContent=input.files?.length?input.files[0].name:'No file selected';out.title=out.textContent;}));
+document.querySelectorAll('.update-form input[type="file"]').forEach((input)=>input.addEventListener('change',()=>{if(input.files?.length)input.style.color='#77eaff';}));
